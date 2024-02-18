@@ -424,15 +424,17 @@ function App() {
     const quotesLength = quotes.length
     const randomIndex = Math.floor(Math.random() * quotesLength) + 1
 
-    text.textContent = quotes[randomIndex].quote
-    author.textContent = `- ${quotes[randomIndex].author}`
+    text.innerHTML = `<h2>"${quotes[randomIndex].quote}"</h1>`
+    author.innerHTML = `<h3>- ${quotes[randomIndex].author}</h3>`
   }
 
   return (
     <>
       <div id="quote-box">
-        <div id="text"></div>
-        <div id="author"></div>
+        <div id="quotes">
+            <div id="text"></div>
+            <div id="author"></div>
+        </div>
         <div id="buttons">
           <button id="new-quote" onClick={handleClick}>New quote</button>
           <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank">

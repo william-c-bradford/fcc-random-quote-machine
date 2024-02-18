@@ -2,17 +2,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   height: 100vh;
+  background-color: red;
+}
+
+#quote-box {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#quotes {
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 500px;
+  height: 300px;
+  padding: 0 10px;
+}
+
+#author {
+  text-align: right;
+}
+
+#buttons {
+  min-width: 500px;
+  display: flex;
+  text-align: justify;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 .fa-twitter, button {
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
   background-color: red;
   border-radius: 7px;
   border: none;
-  padding: 10px;
-  margin: 20px;
+  padding: 0.5em;
   text-decoration: none;
+}
+
+button {
+  padding: 0.43em;
 }
